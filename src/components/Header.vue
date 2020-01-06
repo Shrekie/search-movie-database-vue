@@ -1,7 +1,9 @@
 <template>
   <div>
     <v-toolbar>
-      <v-toolbar-title class="pa-5">{{title}}:</v-toolbar-title>
+      <v-btn class="ma-5" text small to="/">
+        <v-toolbar-title>{{title}}:</v-toolbar-title>
+      </v-btn>
       <Search />
       <v-spacer></v-spacer>
     </v-toolbar>
@@ -15,6 +17,7 @@ export default {
   components: {
     Search
   },
+
   props: {
     title: String
   }
