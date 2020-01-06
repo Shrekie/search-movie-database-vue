@@ -1,16 +1,18 @@
 <template>
   <v-app>
     <Header title="Search Movie Database" />
-    <v-content>Hello</v-content>
+    <Body />
   </v-app>
 </template>
 
 <script>
 import Header from "./components/Header";
+import Body from "./components/Body";
 
 export default {
   components: {
-    Header
+    Header,
+    Body
   }
 };
 </script>
