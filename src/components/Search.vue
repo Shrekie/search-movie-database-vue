@@ -1,12 +1,19 @@
 <template>
-  <v-text-field hide-details single-line v-model="searchValue" @input="valueChange">></v-text-field>
+  <v-text-field
+    hide-details
+    single-line
+    v-model="searchValue"
+    @input="valueChange"
+    v-on:keyup.enter="valueChange"
+  ></v-text-field>
 </template>
 
 <script>
 export default {
   data: () => ({
     searchValue: "",
-    searchTimeout: null
+    searchTimeout: null,
+    millisecondsTimeout: 500
   }),
 
   methods: {
@@ -20,7 +27,7 @@ export default {
       this.searchTimeout = setTimeout(() => {
         this.pushRouterPath();
         this.searchTimeout = null;
-      }, 1000);
+      }, this.millisecondsTimeout);
     },
 
     resetSearchTimeout() {

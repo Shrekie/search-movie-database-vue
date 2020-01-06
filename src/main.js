@@ -7,7 +7,6 @@ Vue.config.productionTip = false;
 
 import routes from "./routes/search";
 
-// Route init conig
 const router = new VueRouter({
   mode: "history",
   routes
