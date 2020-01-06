@@ -1,7 +1,11 @@
 <template>
-  <v-app-bar app color="primary" dark>
-    <div class="d-flex align-center">{{title}}</div>
-  </v-app-bar>
+  <div>
+    <v-toolbar>
+      <v-toolbar-title class="pa-5">{{title}}:</v-toolbar-title>
+      <v-text-field hide-details single-line></v-text-field>
+      <v-spacer></v-spacer>
+    </v-toolbar>
+  </div>
 </template>
 
 <script>
