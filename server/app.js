@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
+const cors = require('cors')
 const port = 3000;
+
+app.use(cors());
 
 var tmdb = require("tmdbv3").init(require("./env").tmdb);
 

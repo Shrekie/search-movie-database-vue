@@ -2,9 +2,10 @@
   <v-text-field
     hide-details
     single-line
+    outlined
     v-model="searchValue"
     @input="valueChange"
-    v-on:keyup.enter="valueChange"
+    v-on:keyup.enter="()=>{valueChange; $event.target.blur();}"
   ></v-text-field>
 </template>
 

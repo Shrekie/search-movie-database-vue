@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Header title="Search Movie Database" />
+    <Header title="SMD" />
     <Body />
   </v-app>
 </template>
