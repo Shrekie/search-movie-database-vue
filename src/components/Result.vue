@@ -16,7 +16,7 @@ export default {
 
   data: () => ({
     results: [],
-    hostnameEndpoint: "http://127.0.0.1:3000/search/"
+    hostnameEndpoint: "http://10.0.0.10:3000/search/"
   }),
 
   props: {

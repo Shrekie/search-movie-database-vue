@@ -5,6 +5,7 @@
     outlined
     v-model="searchValue"
     @input="valueChange"
+    @blur="valueChange"
     v-on:keyup.enter="()=>{valueChange; $event.target.blur();}"
   ></v-text-field>
 </template>
